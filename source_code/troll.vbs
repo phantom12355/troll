@@ -24,7 +24,7 @@ Function three() 'step 3
     Dim yee,wsh
     yee=0
     Set wsh=wscript.createobject("wscript.shell")
-    Do Until yee=20 'open 20 calculators
+    Do Until yee=50 'open 50 calculators
         wsh.run "calc"
         yee=yee+1
     Loop
