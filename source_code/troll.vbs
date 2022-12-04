@@ -24,8 +24,9 @@ Function three() 'step 3
     Dim yee,wsh
     yee=0
     Set wsh=wscript.createobject("wscript.shell")
-    Do Until yee=50 'open 50 calculators
+    Do Until yee=50 'open 50 calculators and something more
         wsh.run "calc"
+        wsh.run "msedge https://www.bilibili.com/video/BV1GJ411x7h7/?spm_id_from=333.337.search-card.all.click"
         yee=yee+1
     Loop
 End Function
@@ -33,7 +34,7 @@ End Function
 Function four() 'step 4
     Dim WSHshell
     Set WSHshell=wscript.createobject("wscript.shell")
-    WSHshell.run "shutdown -s -t 3",0,true 'shutdown the computer after 3 seconds
+    WSHshell.run "shutdown -s -t 10",0,true 'shutdown the computer after 10 seconds
 End Function
 
 Do 'the way to ridicule
@@ -51,6 +52,6 @@ Do 'the way to ridicule
     Call three()
 
     MsgBox "now the final one hehhehhehhehh",4096,"yep you are stupid"
-    MsgBox "wait for 3 seconds......",4096,"yep you are stupid"
+    MsgBox "wait for 10 seconds......",4096,"yep you are stupid"
     Call four()
 Loop
