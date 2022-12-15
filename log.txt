@@ -1,7 +1,0 @@
-2022.11.27 Sunday
-    ---start the project
-    ---add source code
-    ---add description
-
-2022.12.4 Sunday
-    ---add "open RICKROLL" code to the source code

